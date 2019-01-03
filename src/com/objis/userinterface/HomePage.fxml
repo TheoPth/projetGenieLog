@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIcontroller.HomeController">
+   <children>
+      <Label layoutX="217.0" layoutY="74.0" text="Welcome home !">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEvent" layoutX="80.0" layoutY="145.0" mnemonicParsing="false" onAction="#viewEvents" prefHeight="45.0" prefWidth="105.0" text="Events" />
+      <Button fx:id="btnCreateEvent" layoutX="430.0" layoutY="34.0" mnemonicParsing="false" onAction="#viewEventCreation" prefHeight="26.0" prefWidth="142.0" text="Create an Event" />
+      <Button fx:id="btnInvitations" layoutX="414.0" layoutY="145.0" mnemonicParsing="false" onAction="#viewInvitations" prefHeight="45.0" prefWidth="105.0" text="Invitations" />
+      <Button fx:id="btnAccount" layoutX="133.0" layoutY="237.0" mnemonicParsing="false" onAction="#viewAccount" prefHeight="46.0" prefWidth="142.0" text="My Account" />
+      <Button fx:id="btnMessages" layoutX="325.0" layoutY="237.0" mnemonicParsing="false" onAction="#viewMessages" prefHeight="46.0" prefWidth="141.0" text="My Messages" />
+      <Button fx:id="btnQuit" layoutX="247.0" layoutY="327.0" mnemonicParsing="false" onAction="#quitApp" prefHeight="45.0" prefWidth="105.0" text="Quit" textFill="RED" />
+      <Label layoutX="247.0" layoutY="14.0" text="MACHA" textFill="#0300ba">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPartners" layoutX="247.0" layoutY="145.0" mnemonicParsing="false" onAction="#viewPartners" prefHeight="45.0" prefWidth="105.0" text="Partners" />
+      <ImageView fitHeight="145.0" fitWidth="142.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/LogoMacha.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAdmin" layoutX="26.0" layoutY="350.0" mnemonicParsing="false" onAction="#viewUserManagement" prefHeight="26.0" prefWidth="142.0" text="Users Mgmt" textFill="#1e591e" />
+      <Button fx:id="categBtn" layoutX="469.0" layoutY="351.0" mnemonicParsing="false" onAction="#viewCategoryList" text="Category Mgmt" textFill="#1e591e" />
+   </children>
+ </AnchorPane>
+

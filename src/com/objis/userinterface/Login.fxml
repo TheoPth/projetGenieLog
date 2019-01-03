@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.objis.controller.LoginController">
+   <children>
+      <ImageView fitHeight="128.0" fitWidth="148.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../assets/logoPolyshare.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="247.0" layoutY="100.0" text="LOGIN" textFill="#26229a">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <TextField layoutX="208.0" layoutY="225.0" />
+      <TextField layoutX="208.0" layoutY="300.0" />
+      <Button fx:id="btnLogin" layoutX="208.0" layoutY="350.0" mnemonicParsing="false" onAction="#login" text="Sign in" />
+      <Button fx:id="btnSignUp" layoutX="310.0" layoutY="350.0" mnemonicParsing="false" onAction="#signup" text="Sign up" />
+      <Label layoutX="259.0" layoutY="198.0" text="Email :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="272.0" text="Password :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
